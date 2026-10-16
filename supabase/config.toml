@@ -1,0 +1,13 @@
+project_id = "arus-finance"
+
+[functions.budget-alert]
+verify_jwt = true
+
+[functions.delete-account]
+verify_jwt = true
+
+[functions.start-wa-verification]
+verify_jwt = true
+
+[functions.whatsapp-webhook]
+verify_jwt = false
