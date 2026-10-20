@@ -4,5 +4,5 @@ window.ARUS_CONFIG = {
   supabaseUrl: "https://osrfzawkheazutysrcrm.supabase.co",
   supabasePublishableKey: "sb_publishable_etfIjySvQT3CfiEO2gLWlw_-gGa2mFd",
   // Nomor pengirim WhatsApp Business kamu, misalnya 6281234567890 (bukan Phone Number ID API).
-  businessWhatsAppNumber: ""
+  businessWhatsAppNumber: "6285198072450"
 };
