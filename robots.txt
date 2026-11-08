@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /app.html
+Sitemap: https://finance-planner-psi-seven.vercel.app/sitemap.xml
