@@ -346,5 +346,6 @@ render();
 if(client){client.auth.onAuthStateChange((event)=>{if(event==='SIGNED_IN'&&!currentUser&&!hydrating)setTimeout(()=>{void hydrate();},0);if(event==='SIGNED_OUT'&&!demoMode)showAuth();});void hydrate();}else showAuth();
 })();
 </script>
+<script src="./arus-chart-interaktif.js" defer></script>
 </body>
 </html>
