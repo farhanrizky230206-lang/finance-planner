@@ -226,7 +226,8 @@ const KEY='arus_finance_v1';
 const cfg=window.ARUS_CONFIG||{};
 const configured=!!(cfg.supabaseUrl&&cfg.supabasePublishableKey&&window.supabase?.createClient);
 const client=configured?window.supabase.createClient(cfg.supabaseUrl,cfg.supabasePublishableKey):null;
-let currentUser=null,currentProfile=null,demoMode=false,authTab='signin',authMessage='',authError='',hydrating=false,currentChallenge='';
+window.ARUS_APP_CLIENT = client;
+let currentUser= null, currentProfile = null,demoMode = false, authTab = 'signin', authMessage = '',authError='',hydrating=false,currentChallenge='';
 const todayISO=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 const authPanel=document.getElementById('authPanel');
 const emptyProfile=()=>({full_name:'',whatsapp_number:'',gender:'',birth_date:'',whatsapp_opt_in:false});
@@ -348,6 +349,7 @@ if(client){client.auth.onAuthStateChange((event)=>{if(event==='SIGNED_IN'&&!curr
 </script>
 <script src="./arus-chart-interaktif.js" defer></script>
 <script src="./arus-auto-logout-15menit.js" defer></script>
+<script src="./assets/arus-profile-avatar.js" defer></script>
 <script defer src="./assets/arus-help-bundle.js"></script>
 </body>
 </html>
